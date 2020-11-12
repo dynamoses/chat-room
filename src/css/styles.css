@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    margin: 0 auto;
+}
+
+.chat-window {
+    height: 540px;
+    background: radial-gradient(white 50%, #e3f2f3); ;
+}
+
+.header-container {
+    height: 50px;
+}
+
+.chat-window__output {
+    height: calc(100% - 215px);
+}
+
+.chat-window__username {
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    height: 100px;
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid #aed7eb;
+}
+
+.message-box {
+    padding-right: 110px;
+}
+
+.message {
+    overflow-wrap: break-word;
+}
+
+.send-button {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: linear-gradient(to bottom, white 10%, #aed7eb 70%, white 98%)
+}
