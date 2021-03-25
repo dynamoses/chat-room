@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chat Room</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+        <link rel="stylesheet" href="bundle.css">
+    </head>
+    <body class="text-gray-700">
+        <div class="container flex justify-center items-center h-screen">
+            <div id="chat-window" class="chat-window p-5 border-2 w-11/12 md:max-w-xl shadow-md">
+                <div class="mb-2 header-container">
+                    <img class="chat-logo-image w-10 inline-block" src="img/msn-logo.png"/>
+                    <span class="inline-block">Nostalgia Messenger</span>
+                </div>
+                <div id="chat-output" class="chat-window__output p-2 border border-gray-400 mb-3 bg-white overflow-y-scroll">
+                    <div id="output"></div>
+                    <div id="typingMessage"></div>
+                </div>
+                <div class="chat-window__input">
+                    <input id="username" class="w-full chat-window__username p-2 border border-gray-400 bg-white" maxlength="20" type="text" placeholder="Username"/>
+                    <div class="input-container relative h-full border">
+                        <textarea id="message" class="message-box w-full min-h-full p-2 border border-gray-400 bg-white" type="text" placeholder="Type your message here"></textarea>
+                        <button id="sendButton" class="send-button w-24 p-2 absolute border border-blue-400 shadow-md">Send</button>
+                    </div>
+                </di>       
+            </div>
+        </div>
+        <script src="chat.js"></script>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>

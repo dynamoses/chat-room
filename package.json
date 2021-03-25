@@ -1,0 +1,28 @@
+{
+  "name": "chat-room",
+  "version": "1.0.0",
+  "description": "test\r test2",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss build src/css/styles.css -o public/bundle.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dynamoses/chat-room.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dynamoses/chat-room/issues"
+  },
+  "homepage": "https://github.com/dynamoses/chat-room#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "tailwindcss": "^1.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "watch": "^1.0.2"
+  }
+}
